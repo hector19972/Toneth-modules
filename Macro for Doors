@@ -1,0 +1,80 @@
+// ================================================================
+// Copy ALL door properties (including texture & animation) from
+// the selected door to every other door on the map.
+// ================================================================
+
+const selected = canvas.walls.controlled;
+if (!selected.length) {
+  ui.notifications.warn("Please select a single wall that is a door.");
+  return;
+}
+
+const src = selected[0].document;
+
+// Check if it's a door (accept numeric 1 or boolean true)
+if (!src.door && src.door !== 1) {
+  ui.notifications.warn("The selected wall is not a door.");
+  return;
+}
+
+// Get all other doors on the scene
+const otherDoors = canvas.scene.walls.filter(w =>
+  (w.door || w.door === 1) && w._id !== src._id
+);
+
+if (!otherDoors.length) {
+  ui.notifications.info("No other doors found on this map.");
+  return;
+}
+
+// --- Build update data for each target door ---
+const updates = otherDoors.map(w => {
+  const update = { _id: w._id };
+
+  // 1. Door flag (convert to boolean)
+  update.door = true;
+
+  // 2. Door state (use 'ds' or 'doorState')
+  if (src.ds !== undefined) update.doorState = src.ds;
+  else if (src.doorState !== undefined) update.doorState = src.doorState;
+  else update.doorState = 0; // default: closed
+
+  // 3. Sound, message, colour (if present)
+  if (src.doorSound !== undefined) update.doorSound = src.doorSound;
+  if (src.doorMessage !== undefined) update.doorMessage = src.doorMessage;
+  if (src.doorColor !== undefined) update.doorColor = src.doorColor;
+
+  // 4. Texture – from doorTexture or from animation.texture
+  if (src.doorTexture !== undefined) {
+    update.doorTexture = src.doorTexture;
+  } else if (src.animation && src.animation.texture) {
+    update.doorTexture = src.animation.texture;
+  }
+
+  // 5. Animation – from doorAnimation, or build from 'animation' object
+  if (src.doorAnimation !== undefined) {
+    // Copy the full doorAnimation object (core)
+    update.doorAnimation = foundry.utils.deepClone(src.doorAnimation);
+  } else if (src.animation) {
+    // Copy the full 'animation' object (module/legacy)
+    update.animation = foundry.utils.deepClone(src.animation);
+
+    // Also create a compatible doorAnimation for core systems
+    update.doorAnimation = {
+      type: src.animation.type || "swing",
+      duration: src.animation.duration || 300
+    };
+  } else {
+    // Fallback default animation
+    update.doorAnimation = { type: "swing", duration: 300 };
+  }
+
+  return update;
+});
+
+// --- Apply all updates in one go ---
+await canvas.scene.updateEmbeddedDocuments("Wall", updates);
+
+ui.notifications.notify(
+  `✅ Copied door properties (texture + animation) to ${updates.length} other doors.`
+);
