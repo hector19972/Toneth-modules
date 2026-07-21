@@ -268,6 +268,6 @@
       "version": "10.0.3"
     }
   ],
-  "manifest": "https://raw.github.com/hector19972/Toneth-modules/edit/main/module.json",
-  "download": "https://raw.github.com/hector19972/Toneth-modules/edit/mainempty.zip"
+  "manifest": "https://raw.githubusercontent.com/hector19972/Toneth-modules/refs/heads/main/module.json",
+  "download": "https://raw.githubusercontent.com/hector19972/Toneth-modules/edit/mainempty.zip"
 }
