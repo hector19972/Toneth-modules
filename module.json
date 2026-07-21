@@ -269,5 +269,5 @@
     }
   ],
   "manifest": "https://raw.githubusercontent.com/hector19972/Toneth-modules/refs/heads/main/module.json",
-  "download": "https://raw.githubusercontent.com/hector19972/Toneth-modules/edit/mainempty.zip"
+  "download": "https://github.com/hector19972/Toneth-modules/raw/refs/heads/main/empty.zip"
 }
