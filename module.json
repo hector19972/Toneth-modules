@@ -1,178 +1,58 @@
 {
-  "id": "seleccion-modulos-Toneth",
-  "title": "Modulos seleccionados para el taller de FoundryVTT",
-  "description": "Coleccion de modulos que considero escenciales para dnd",
+  "name": "mi-mega-lista-toneth",
+  "title": "🎲 Mega Lista de Módulos Esenciales (sin Plutonium)",
+  "description": "Módulo contenedor para instalar automáticamente todos los módulos esenciales para D&D 5e, excluyendo Plutonium.",
   "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Toneth"
+    }
+  ],
   "compatibility": {
     "minimum": "13",
     "verified": "13"
   },
   "relationships": {
-        "requires": [
-            {
-            "id": "ActiveAuras",
-            "type": "module"
-            },
-            {
-            "id": "ATL",
-            "type": "module"
-            },
-            {
-            "id": "autoanimations",
-            "type": "module"
-            },
-            {
-            "id": "automated-conditions-5e",
-            "type": "module"
-            },
-            {
-            "id": "automated-evocations",
-            "type": "module"
-            },
-            {
-            "id": "bossbar",
-            "type": "module"
-            },
-            {
-            "id": "chris-premades",
-            "type": "module"
-            },
-            {
-            "id": "combat-tracker-dock",
-            "type": "module"
-            },
-            {
-            "id": "dae",
-            "type": "module"
-            },
-            {
-            "id": "dfreds-convenient-effects",
-            "type": "module"
-            },
-            {
-            "id": "dice-calculator",
-            "type": "module"
-            },
-            {
-            "id": "dice-so-nice",
-            "type": "module"
-            },
-            {
-            "id": "enhanced-region-behavior",
-            "type": "module"
-            },
-            {
-            "id": "jaamod",
-            "type": "module"
-            },
-            {
-            "id": "JB2A_DnD5e",
-            "type": "module"
-            },
-            {
-            "id": "lib-dfreds-migrations",
-            "type": "module"
-            },
-            {
-            "id": "lib-dfreds-ui-extender",
-            "type": "module"
-            },
-            {
-            "id": "lib-wrapper",
-            "type": "module"
-            },
-            {
-            "id": "midi-qol",
-            "type": "module"
-            },
-            {
-            "id": "monks-active-tiles",
-            "type": "module"
-            },
-            {
-            "id": "monks-bloodsplats",
-            "type": "module"
-            },
-            {
-            "id": "monks-combat-details",
-            "type": "module"
-            },
-            {
-            "id": "monks-combat-marker",
-            "type": "module"
-            },
-            {
-            "id": "monks-hotbar-expansion",
-            "type": "module"
-            },
-            {
-            "id": "monks-little-details",
-            "type": "module"
-            },
-            {
-            "id": "monks-sound-enhancements",
-            "type": "module"
-            },
-            {
-            "id": "monks-tokenbar",
-            "type": "module"
-            },
-            {
-            "id": "monks-wall-enhancement",
-            "type": "module"
-            },
-            {
-            "id": "plutonium",
-            "type": "module"
-            },
-            {
-            "id": "plutonium-addon-automation",
-            "type": "module"
-            },
-            {
-            "id": "polyglot",
-            "type": "module"
-            },
-            {
-            "id": "portal-lib",
-            "type": "module"
-            },
-            {
-            "id": "sequencer",
-            "type": "module"
-            },
-            {
-            "id": "simple-cinematic-pan",
-            "type": "module"
-            },
-            {
-            "id": "socketlib",
-            "type": "module"
-            },
-            {
-            "id": "swipe-vtt",
-            "type": "module"
-            },
-            {
-            "id": "times-up",
-            "type": "module"
-            },
-            {
-            "id": "token-frames",
-            "type": "module"
-            },
-            {
-            "id": "tokenmagic",
-            "type": "module"
-            },
-            {
-            "id": "vtta-tokenizer",
-            "type": "module"
-            },
-            {
-            "id": "wgtgm-mini-calendar",
-            "type": "module"
-            }
-        ]
-    }
+    "requires": [
+      { "id": "ActiveAuras", "type": "module" },
+      { "id": "ATL", "type": "module" },
+      { "id": "autoanimations", "type": "module" },
+      { "id": "automated-conditions-5e", "type": "module" },
+      { "id": "automated-evocations", "type": "module" },
+      { "id": "bossbar", "type": "module" },
+      { "id": "chris-premades", "type": "module" },
+      { "id": "combat-tracker-dock", "type": "module" },
+      { "id": "dae", "type": "module" },
+      { "id": "dfreds-convenient-effects", "type": "module" },
+      { "id": "dice-calculator", "type": "module" },
+      { "id": "dice-so-nice", "type": "module" },
+      { "id": "enhanced-region-behavior", "type": "module" },
+      { "id": "jaamod", "type": "module" },
+      { "id": "JB2A_DnD5e", "type": "module" },
+      { "id": "lib-dfreds-migrations", "type": "module" },
+      { "id": "lib-dfreds-ui-extender", "type": "module" },
+      { "id": "lib-wrapper", "type": "module" },
+      { "id": "midi-qol", "type": "module" },
+      { "id": "monks-active-tiles", "type": "module" },
+      { "id": "monks-bloodsplats", "type": "module" },
+      { "id": "monks-combat-details", "type": "module" },
+      { "id": "monks-combat-marker", "type": "module" },
+      { "id": "monks-hotbar-expansion", "type": "module" },
+      { "id": "monks-little-details", "type": "module" },
+      { "id": "monks-sound-enhancements", "type": "module" },
+      { "id": "monks-tokenbar", "type": "module" },
+      { "id": "monks-wall-enhancement", "type": "module" },
+      { "id": "polyglot", "type": "module" },
+      { "id": "portal-lib", "type": "module" },
+      { "id": "sequencer", "type": "module" },
+      { "id": "simple-cinematic-pan", "type": "module" },
+      { "id": "socketlib", "type": "module" },
+      { "id": "swipe-vtt", "type": "module" },
+      { "id": "times-up", "type": "module" },
+      { "id": "token-frames", "type": "module" },
+      { "id": "tokenmagic", "type": "module" },
+      { "id": "vtta-tokenizer", "type": "module" },
+      { "id": "wgtgm-mini-calendar", "type": "module" }
+    ]
+  }
 }
