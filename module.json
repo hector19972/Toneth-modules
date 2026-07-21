@@ -1,275 +1,273 @@
 {
-  "core": {
-    "version": "13.351"
+  "id": "toneth-module-loadout",
+  "title": "Toneth's Module Loadout",
+  "description": "Bulk installs all modules used by Toneth in Foundry V13",
+  "version": "1.0.0",
+  "authors": [{ "name": "Toneth" }],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.351"
   },
-  "system": {
-    "id": "dnd5e",
-    "version": "5.3.3",
-    "author": "Atropos",
-    "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json"
-  },
-  "modules": [
+  "dependencies": [
+    {
+      "id": "dnd5e",
+      "type": "system",
+      "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+      "version": "5.3.3"
+    },
     {
       "id": "ActiveAuras",
-      "version": "0.12.7",
-      "author": "Kandashi, MrPrimate",
-      "manifest": "https://github.com/kandashi/Active-Auras/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/kandashi/Active-Auras/releases/latest/download/module.json",
+      "version": "0.12.7"
     },
     {
       "id": "autoanimations",
-      "version": "6.8.5",
-      "author": "theripper93, Otigon (Otigon#2010)",
-      "manifest": "https://github.com/theripper93/autoanimations/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/theripper93/autoanimations/releases/latest/download/module.json",
+      "version": "6.8.5"
     },
     {
       "id": "automated-conditions-5e",
-      "version": "13.5330.1.4",
-      "author": "thatlonelybugbear",
-      "manifest": "https://raw.githubusercontent.com/thatlonelybugbear/automated-conditions-5e/v13/module.json"
+      "type": "module",
+      "manifest": "https://raw.githubusercontent.com/thatlonelybugbear/automated-conditions-5e/v13/module.json",
+      "version": "13.5330.1.4"
     },
     {
       "id": "automated-evocations",
-      "version": "5.0.0",
-      "author": "theripper93",
-      "manifest": "https://github.com/theripper93/automated-evocations/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/theripper93/automated-evocations/releases/latest/download/module.json",
+      "version": "5.0.0"
     },
     {
       "id": "bossbar",
-      "version": "4.0.0",
-      "author": "theripper93",
-      "manifest": "https://github.com/theripper93/Boss-Bar/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/theripper93/Boss-Bar/releases/latest/download/module.json",
+      "version": "4.0.0"
     },
     {
       "id": "chris-premades",
-      "version": "1.5.41",
-      "author": "Chris, Autumn, Michael, SagaTympana, Bacon",
-      "manifest": "https://github.com/chrisk123999/chris-premades/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/chrisk123999/chris-premades/releases/latest/download/module.json",
+      "version": "1.5.41"
     },
     {
       "id": "combat-tracker-dock",
-      "version": "4.1.8",
-      "author": "theripper93",
-      "manifest": "https://github.com/theripper93/combat-tracker-dock/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/theripper93/combat-tracker-dock/releases/latest/download/module.json",
+      "version": "4.1.8"
     },
     {
       "id": "dae",
-      "version": "13.0.29",
-      "author": "tposney, Micheal Roth",
-      "manifest": "https://gitlab.com/tposney/dae/raw/v13/package/module.json"
+      "type": "module",
+      "manifest": "https://gitlab.com/tposney/dae/raw/v13/package/module.json",
+      "version": "13.0.29"
     },
     {
       "id": "dfreds-convenient-effects",
-      "version": "8.2.5",
-      "author": "DFreds",
-      "manifest": "https://github.com/DFreds/dfreds-convenient-effects/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/DFreds/dfreds-convenient-effects/releases/latest/download/module.json",
+      "version": "8.2.5"
     },
     {
       "id": "dice-calculator",
-      "version": "3.5.5",
-      "author": "Asacolips, Matheus Clemente",
-      "manifest": "https://github.com/mclemente/fvtt-dice-tray/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/mclemente/fvtt-dice-tray/releases/latest/download/module.json",
+      "version": "3.5.5"
     },
     {
       "id": "dice-so-nice",
-      "version": "5.3.4",
-      "author": "JDW, Simone",
-      "manifest": "https://gitlab.com/riccisi/foundryvtt-dice-so-nice/-/raw/master/module/module.json"
+      "type": "module",
+      "manifest": "https://gitlab.com/riccisi/foundryvtt-dice-so-nice/-/raw/master/module/module.json",
+      "version": "5.3.4"
     },
     {
       "id": "enhanced-region-behavior",
-      "version": "1.5.0",
-      "author": "TMinz",
-      "manifest": "https://github.com/txm3278/Enhanced-Region-Behaviors/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/txm3278/Enhanced-Region-Behaviors/releases/latest/download/module.json",
+      "version": "1.5.0"
     },
     {
       "id": "forien-copy-environment",
-      "version": "v3.0.0",
-      "author": "Blair McMillan, Forien",
-      "manifest": "https://github.com/League-of-Foundry-Developers/foundryvtt-forien-copy-environment/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/League-of-Foundry-Developers/foundryvtt-forien-copy-environment/releases/latest/download/module.json",
+      "version": "v3.0.0"
     },
     {
       "id": "jaamod",
-      "version": "0.94",
-      "author": "Jinker",
-      "manifest": "https://raw.githubusercontent.com/jinkergm/JAA/master/module.json"
+      "type": "module",
+      "manifest": "https://raw.githubusercontent.com/jinkergm/JAA/master/module.json",
+      "version": "0.94"
     },
     {
       "id": "JB2A_DnD5e",
-      "version": "0.9.1",
-      "author": "Jules, Ben",
-      "manifest": "https://github.com/Jules-Bens-Aa/JB2A_DnD5e/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/Jules-Bens-Aa/JB2A_DnD5e/releases/latest/download/module.json",
+      "version": "0.9.1"
     },
     {
       "id": "lib-dfreds-migrations",
-      "version": "1.0.3",
-      "author": "DFreds",
-      "manifest": "https://github.com/DFreds/lib-dfreds-migrations/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/DFreds/lib-dfreds-migrations/releases/latest/download/module.json",
+      "version": "1.0.3"
     },
     {
       "id": "lib-dfreds-ui-extender",
-      "version": "2.2.0",
-      "author": "DFreds",
-      "manifest": "https://github.com/DFreds/lib-dfreds-ui-extender/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/DFreds/lib-dfreds-ui-extender/releases/latest/download/module.json",
+      "version": "2.2.0"
     },
     {
       "id": "lib-wrapper",
-      "version": "1.13.5.1",
-      "author": "Rui Pinheiro",
-      "manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json",
+      "version": "1.13.5.1"
     },
     {
       "id": "midi-qol",
-      "version": "13.0.64",
-      "author": "Tim Posney, Micheal Roth, Themis",
-      "manifest": "https://gitlab.com/tposney/midi-qol/raw/v13/package/module.json"
+      "type": "module",
+      "manifest": "https://gitlab.com/tposney/midi-qol/raw/v13/package/module.json",
+      "version": "13.0.64"
     },
     {
       "id": "monks-active-tiles",
-      "version": "13.06",
-      "author": "IronMonk",
-      "manifest": "https://github.com/ironmonk108/monks-active-tiles/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/ironmonk108/monks-active-tiles/releases/latest/download/module.json",
+      "version": "13.06"
     },
     {
       "id": "monks-bloodsplats",
-      "version": "13.01",
-      "author": "IronMonk",
-      "manifest": "https://github.com/ironmonk108/monks-bloodsplats/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/ironmonk108/monks-bloodsplats/releases/latest/download/module.json",
+      "version": "13.01"
     },
     {
       "id": "monks-combat-details",
-      "version": "13.05",
-      "author": "IronMonk",
-      "manifest": "https://github.com/ironmonk108/monks-combat-details/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/ironmonk108/monks-combat-details/releases/latest/download/module.json",
+      "version": "13.05"
     },
     {
       "id": "monks-combat-marker",
-      "version": "12.01",
-      "author": "IronMonk",
-      "manifest": "https://github.com/ironmonk88/monks-combat-marker/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/ironmonk88/monks-combat-marker/releases/latest/download/module.json",
+      "version": "12.01"
     },
     {
       "id": "monks-hotbar-expansion",
-      "version": "14.01",
-      "author": "IronMonk",
-      "manifest": "https://github.com/ironmonk108/hotbar-expansion/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/ironmonk108/hotbar-expansion/releases/latest/download/module.json",
+      "version": "14.01"
     },
     {
       "id": "monks-little-details",
-      "version": "13.03",
-      "author": "IronMonk",
-      "manifest": "https://github.com/ironmonk108/monks-little-details/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/ironmonk108/monks-little-details/releases/latest/download/module.json",
+      "version": "13.03"
     },
     {
       "id": "monks-sound-enhancements",
-      "version": "13.02",
-      "author": "IronMonk",
-      "manifest": "https://github.com/ironmonk108/monks-sound-enhancements/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/ironmonk108/monks-sound-enhancements/releases/latest/download/module.json",
+      "version": "13.02"
     },
     {
       "id": "monks-tokenbar",
-      "version": "13.02",
-      "author": "IronMonk",
-      "manifest": "https://github.com/ironmonk108/monks-tokenbar/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/ironmonk108/monks-tokenbar/releases/latest/download/module.json",
+      "version": "13.02"
     },
     {
       "id": "monks-wall-enhancement",
-      "version": "13.04",
-      "author": "IronMonk",
-      "manifest": "https://github.com/ironmonk108/monks-wall-enhancement/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/ironmonk108/monks-wall-enhancement/releases/latest/download/module.json",
+      "version": "13.04"
     },
     {
       "id": "plutonium",
-      "version": "2.16.2.v13",
-      "author": "Giddy",
-      "manifest": "https://github.com/TheGiddyLimit/plutonium-next/releases/download/v2.16.2/module-foundry13.json"
+      "type": "module",
+      "manifest": "https://github.com/TheGiddyLimit/plutonium-next/releases/download/v2.16.2/module-foundry13.json",
+      "version": "2.16.2.v13"
     },
     {
       "id": "plutonium-addon-automation",
-      "version": "0.8.4",
-      "author": "Giddy, Spappz",
-      "manifest": "https://github.com/TheGiddyLimit/plutonium-addon-automation/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/TheGiddyLimit/plutonium-addon-automation/releases/latest/download/module.json",
+      "version": "0.8.4"
     },
     {
       "id": "polyglot",
-      "version": "2.8.3",
-      "author": "Matheus Clemente",
-      "manifest": "https://github.com/mclemente/fvtt-module-polyglot/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/mclemente/fvtt-module-polyglot/releases/latest/download/module.json",
+      "version": "2.8.3"
     },
     {
       "id": "portal-lib",
-      "version": "3.0.4",
-      "author": "theripper93",
-      "manifest": "https://github.com/theripper93/portal-lib/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/theripper93/portal-lib/releases/latest/download/module.json",
+      "version": "3.0.4"
     },
     {
       "id": "sephrals-module-loadouts",
-      "version": "1.0.0",
-      "author": "Sephral",
-      "manifest": "https://github.com/Sephral/sephrals-module-loadouts/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/Sephral/sephrals-module-loadouts/releases/latest/download/module.json",
+      "version": "1.0.0"
     },
     {
       "id": "sequencer",
-      "version": "4.2.3",
-      "author": "Wasp",
-      "manifest": "https://github.com/fantasycalendar/FoundryVTT-Sequencer/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/fantasycalendar/FoundryVTT-Sequencer/releases/latest/download/module.json",
+      "version": "4.2.3"
     },
     {
       "id": "simple-cinematic-pan",
-      "version": "1.1.0",
-      "author": "Tendra",
-      "manifest": "https://github.com/Tendrael/simple-cinematic-pan/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/Tendrael/simple-cinematic-pan/releases/latest/download/module.json",
+      "version": "1.1.0"
     },
     {
       "id": "socketlib",
-      "version": "v1.1.4",
-      "author": "Farling, Manuel Vögele",
-      "manifest": "https://github.com/farling42/foundryvtt-socketlib/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/farling42/foundryvtt-socketlib/releases/latest/download/module.json",
+      "version": "v1.1.4"
     },
     {
       "id": "swipe-vtt",
-      "version": "1.23.0",
-      "author": "Carolingian",
-      "manifest": "https://raw.githubusercontent.com/crlngn/swipe-vtt/v1/module.json"
+      "type": "module",
+      "manifest": "https://raw.githubusercontent.com/crlngn/swipe-vtt/v1/module.json",
+      "version": "1.23.0"
     },
     {
       "id": "times-up",
-      "version": "13.1.9",
-      "author": "tposney",
-      "manifest": "https://gitlab.com/tposney/times-up/raw/master/package/module.json"
+      "type": "module",
+      "manifest": "https://gitlab.com/tposney/times-up/raw/master/package/module.json",
+      "version": "13.1.9"
     },
     {
       "id": "token-frames",
-      "version": "1.7.0",
-      "author": "volfied, Jay Colson",
-      "manifest": "https://github.com/yorkshirelandscape/token_frames/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/yorkshirelandscape/token_frames/releases/latest/download/module.json",
+      "version": "1.7.0"
     },
     {
       "id": "tokenmagic",
-      "version": "0.7.6.3",
-      "author": "SecretFire, sPOiDar, Zimm, Lozalojo, Moerill, KLO, dev7355608, Mestre Digital, BrotherSharper-Touge, OsiJr, Aedif",
-      "manifest": "https://github.com/Feu-Secret/Tokenmagic/releases/latest/download/module.json"
+      "type": "module",
+      "manifest": "https://github.com/Feu-Secret/Tokenmagic/releases/latest/download/module.json",
+      "version": "0.7.6.3"
     },
     {
       "id": "vtta-tokenizer",
-      "version": "5.0.3",
-      "author": "MrPrimate, Sebastian Will",
-      "manifest": "https://github.com/MrPrimate/tokenizer/releases/download/latest/module.json"
+      "type": "module",
+      "manifest": "https://github.com/MrPrimate/tokenizer/releases/download/latest/module.json",
+      "version": "5.0.3"
     },
     {
       "id": "wgtgm-mini-calendar",
-      "version": "10.0.3",
-      "author": "Stephen Garrett",
-      "manifest": "https://wgtngm.com/modules/wgtgm-mini-calendar/module.json"
-    },
-    {
-      "id": "xxxxxxxxx",
-      "version": "2.16.2.v13",
-      "author": ""
-    },
-    {
-      "id": "xxxxxxxxx-addon-automation",
-      "version": "0.8.4",
-      "author": ""
+      "type": "module",
+      "manifest": "https://wgtngm.com/modules/wgtgm-mini-calendar/module.json",
+      "version": "10.0.3"
     }
-  ]
+  ],
+  "manifest": "https://raw.github.com/hector19972/Toneth-modules/edit/main/module.json",
+  "download": "https://raw.github.com/hector19972/Toneth-modules/edit/mainempty.zip"
 }
